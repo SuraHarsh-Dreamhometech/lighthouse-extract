@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Generated audit output (contains full page snapshots of audited sites)
+reports/
+
+# Local Claude Code instructions
+CLAUDE.md
+
+# OS junk
+Thumbs.db
+.DS_Store

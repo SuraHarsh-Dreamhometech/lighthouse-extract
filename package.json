@@ -1,0 +1,17 @@
+{
+  "name": "lighthouse-extract",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Run Lighthouse on any URL (localhost or online) and extract the complete results to disk",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "audit": "node run.js"
+  },
+  "dependencies": {
+    "chrome-launcher": "^1.1.2",
+    "lighthouse": "^12.6.0"
+  }
+}
