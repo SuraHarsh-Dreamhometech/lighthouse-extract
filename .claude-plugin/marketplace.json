@@ -1,0 +1,14 @@
+{
+  "name": "lighthouse-extract",
+  "description": "Lighthouse audits inside Claude Code.",
+  "owner": {
+    "name": "Sura Harsh"
+  },
+  "plugins": [
+    {
+      "name": "lighthouse",
+      "source": ".",
+      "description": "Run Lighthouse on any URL (localhost or online), save the complete results, and turn them into a prioritized fix list."
+    }
+  ]
+}

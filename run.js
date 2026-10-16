@@ -70,6 +70,11 @@ const stamp = new Date().toISOString().replace(/[:T]/g, '-').slice(0, 19);
 const runDir = path.join(outRoot, `${host}_${stamp}`);
 fs.mkdirSync(runDir, { recursive: true });
 
+// Reports contain full page snapshots of audited sites. Keep them out of git
+// wherever they land (e.g. --out inside another project).
+const ignorePath = path.join(outRoot, '.gitignore');
+if (!fs.existsSync(ignorePath)) fs.writeFileSync(ignorePath, '*\n');
+
 const [jsonReport, htmlReport] = runnerResult.report;
 fs.writeFileSync(path.join(runDir, 'report.json'), jsonReport);
 fs.writeFileSync(path.join(runDir, 'report.html'), htmlReport);
