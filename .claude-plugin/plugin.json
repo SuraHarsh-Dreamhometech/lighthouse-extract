@@ -1,0 +1,11 @@
+{
+  "name": "lighthouse",
+  "description": "Run Lighthouse on any URL (localhost or online), save the complete results, and turn them into a prioritized fix list.",
+  "author": {
+    "name": "Sura Harsh"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/SuraHarsh-Dreamhometech/lighthouse-extract",
+  "repository": "https://github.com/SuraHarsh-Dreamhometech/lighthouse-extract",
+  "keywords": ["lighthouse", "performance", "core-web-vitals", "accessibility", "seo"]
+}
